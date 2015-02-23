@@ -25,7 +25,12 @@ repositories {
 
 dependencies {
 	compile 'org.springframework.boot:spring-boot-starter-web'
-	compile 'org.springframework.social:spring-social-github:1.0.0.M4'
+	compile 'org.springframework.social:spring-social-core:1.1.0.RELEASE'
+	compile 'org.springframework.social:spring-social-config:1.1.0.RELEASE'
+	compile 'org.springframework.social:spring-social-web:1.1.0.RELEASE'
+	compile('org.springframework.social:spring-social-github:1.0.0.M4') {
+		exclude group: 'org.springframework.social'
+	}
 
   testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
