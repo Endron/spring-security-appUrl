@@ -2,6 +2,11 @@
 build/
 .gradle/
 
+#Eclipse Project files
+.classpath
+.project
+.settings/
+
 *.class
 
 # Mobile Tools for Java (J2ME)
